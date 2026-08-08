@@ -2,25 +2,28 @@
 
 ## Current Objective
 
-Build a Python command-line application that helps automate common civil engineering and plumbing
-calculations while reinforcing Python fundamentals.
+Build a Python command-line application that automates practical civil engineering
+and plumbing calculations while reinforcing Python, Git, and software engineering fundamentals.
 
 ## Planned Modules
 
 - [x] Unit Converter
-- [ ] Pipe Calculator
+- [ ] Pipe Flow / Pipe Sizing Calculator
 - [ ] Pipe Slope Calculator
 - [ ] Material Estimator
 - [ ] Water Tank Sizing
 
 ## Planned Features
 
+- [ ] Input Validation
 - [ ] Save Projects (JSON)
+- [ ] Calculation History
 
 ## Future Improvements
 
 - [ ] CSV Import/Export
+- [ ] Automated Testing
 - [ ] SQL Database
 - [ ] C# Version
 - [ ] FastAPI Backend
-- [ ] Revit Integration
+- [ ] Revit / BIM Integration

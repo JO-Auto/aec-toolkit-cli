@@ -1,10 +1,13 @@
 # Engineering Utilities CLI
 
-A command-line application for civil engineering and plumbing utilities.
+A Python command-line application for practical civil engineering and plumbing
+calculations.
 
 ## Goals
 
-- Improve Python programming skills.
-- Build practical engineering tools.
-- Practice Git and GitHub.
-- Create a project that will later be rebuilt in C# and expanded into a larger engineering platform.
+- Strengthen my Python programming skills.
+- Build practical tools based on real-world engineering problems.
+- Practice Git, GitHub, and software development fundamentals.
+- Turn engineering knowledge into useful software.
+- Eventually rebuild and expand the project in C# as I progress toward larger AEC
+  engineering and automation projects.
