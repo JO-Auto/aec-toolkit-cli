@@ -2,7 +2,8 @@
 
 ## Current Objective
 
-Build a Python command-line application that helps automate common civil engineering and plumbing calculations while reinforcing Python fundamentals.
+Build a Python command-line application that helps automate common civil engineering and plumbing
+calculations while reinforcing Python fundamentals.
 
 ## Planned Modules
 
