@@ -27,12 +27,12 @@ def unit_converter():
     print("=============================")
 
     conversion = int(input(
-        "Press the number respective to the conversion you want\n"
         "1. Meters → Feet\n"
         "2. Feet → Meters\n"
         "3. Millimeters → Meters\n"
         "4. Meters → Millimeters\n"
         "5. Back\n"
+        "Press the number respective to the conversion you want: "
     ))
 
     if conversion == 5:
@@ -48,6 +48,3 @@ def unit_converter():
         print(millimeters_to_meter(number))
     elif conversion == 4:
         print(meters_to_millimeters(number))
-
-
-unit_converter()

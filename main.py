@@ -1,7 +1,8 @@
-def main():
-    print("=============================")
-    print("  Engineering Utilities CLI")
-    print("=============================")
+from calculators import unit_converter
 
-if __name__ == "__main__":
-    main()
+
+print("=============================")
+print("  Engineering Utilities CLI")
+print("=============================")
+
+unit_converter.unit_converter()
