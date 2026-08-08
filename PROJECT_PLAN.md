@@ -7,7 +7,7 @@ calculations while reinforcing Python fundamentals.
 
 ## Planned Modules
 
-- [ ] Unit Converter
+- [x] Unit Converter
 - [ ] Pipe Calculator
 - [ ] Pipe Slope Calculator
 - [ ] Material Estimator
