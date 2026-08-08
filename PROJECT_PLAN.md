@@ -12,6 +12,9 @@ calculations while reinforcing Python fundamentals.
 - [ ] Pipe Slope Calculator
 - [ ] Material Estimator
 - [ ] Water Tank Sizing
+
+## Planned Features
+
 - [ ] Save Projects (JSON)
 
 ## Future Improvements
