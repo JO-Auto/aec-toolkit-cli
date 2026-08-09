@@ -1,6 +1,3 @@
-import sys
-
-
 def meter_to_feet(meters):
     feet = meters * 3.28084
     return feet
@@ -36,15 +33,15 @@ def unit_converter():
     ))
 
     if conversion == 5:
-        sys.exit()
+        return
 
     number = float(input("What is the number do you like to convert? "))
 
     if conversion == 1:
-        print(meter_to_feet(number))
+        print(f"{meter_to_feet(number)} feet")
     elif conversion == 2:
-        print(feet_to_meter(number))
+        print(f"{feet_to_meter(number)} meters")
     elif conversion == 3:
-        print(millimeters_to_meter(number))
+        print(f"{millimeters_to_meter(number)} meters")
     elif conversion == 4:
-        print(meters_to_millimeters(number))
+        print(f"{meters_to_millimeters(number)} millimeters")
