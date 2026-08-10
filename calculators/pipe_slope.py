@@ -1,4 +1,9 @@
-def calculate_slope():
+def calculate_slope(rise, run):
+    slope = (rise / run) * 100
+    return slope
+
+
+def pipe_slope():
     print("==============================")
     print("       Slope Determiner       ")
     print("==============================")
@@ -31,6 +36,5 @@ def calculate_slope():
                 print("Invalid input")
                 continue
 
-            slope = (rise / run) * 100
-            print(f"{round(slope, 2)} %")
+            print(f"{round(calculate_slope(rise, run), 2)}%")
             break

@@ -1,14 +1,14 @@
-def meter_to_feet(meters):
+def meters_to_feet(meters):
     feet = meters * 3.28084
     return feet
 
 
-def feet_to_meter(feet):
+def feet_to_meters(feet):
     meter = feet * 0.3048
     return meter
 
 
-def millimeters_to_meter(millimeters):
+def millimeters_to_meters(millimeters):
     meter = millimeters * 0.001
     return meter
 
@@ -58,11 +58,11 @@ def unit_converter():
                 continue
 
             if conversion == 1:
-                print(f"{round(meter_to_feet(number), 2)} feet")
+                print(f"{round(meters_to_feet(number), 2)} feet")
             elif conversion == 2:
-                print(f"{round(feet_to_meter(number), 2)} meters")
+                print(f"{round(feet_to_meters(number), 2)} meters")
             elif conversion == 3:
-                print(f"{round(millimeters_to_meter(number), 2)} meters")
+                print(f"{round(millimeters_to_meters(number), 2)} meters")
             elif conversion == 4:
                 print(f"{round(meters_to_millimeters(number), 2)} millimeters")
             break
