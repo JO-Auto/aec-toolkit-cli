@@ -11,7 +11,7 @@ calculations while reinforcing Python, Git, and software engineering fundamental
 - [ ] Pipe Flow / Pipe Sizing Calculator
 - [x] Pipe Slope Calculator
 - [x] Material Estimator
-- [ ] Water Tank Sizing
+- [x] Water Tank Sizing
 
 ## Planned Features
 

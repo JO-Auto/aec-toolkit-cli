@@ -1,6 +1,7 @@
 from calculators import unit_converter
 from calculators import pipe_slope
 from calculators import material_estimator
+from calculators import water_tank_sizing
 
 print("==============================")
 print("   Engineering Utilities CLI   ")
@@ -14,7 +15,8 @@ while running:
             "1. Unit Converter\n"
             "2. Pipe Slope Calculator\n"
             "3. Material Estimator\n"
-            "4. Exit\n"
+            "4. Water Tank Sizing\n"
+            "5. Exit\n"
         ))
 
     except ValueError:
@@ -28,6 +30,8 @@ while running:
     elif device == 3:
         material_estimator.material_estimator()
     elif device == 4:
+        water_tank_sizing.water_tank_sizing()
+    elif device == 5:
         running = False
     else:
         print("Invalid input")
