@@ -5,18 +5,25 @@ print("=============================")
 print("  Engineering Utilities CLI")
 print("=============================")
 
-done = False
-while not done:
-    device = int(input(
-        "Choose your calculator:\n"
-        "1. Unit Converter\n"
-        "2. Pipe Slope Calculator\n"
-        "3. Exit\n"
-    ))
+running = True
+while running:
+    try:
+        device = int(input(
+            "Choose your calculator:\n"
+            "1. Unit Converter\n"
+            "2. Pipe Slope Calculator\n"
+            "3. Exit\n"
+        ))
 
-    if device == 1:
-        unit_converter.unit_converter()
-    elif device == 2:
-        pipe_slope.calculate_slope()
+    except ValueError:
+        print("Invalid input")
+
     else:
-        done = True
+        if device == 1:
+            unit_converter.unit_converter()
+        elif device == 2:
+            pipe_slope.calculate_slope()
+        elif device == 3:
+            running = False
+        else:
+            print("Invalid input")

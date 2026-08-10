@@ -23,25 +23,40 @@ def unit_converter():
     print("       Unit Converter       ")
     print("=============================")
 
-    conversion = int(input(
-        "1. Meters → Feet\n"
-        "2. Feet → Meters\n"
-        "3. Millimeters → Meters\n"
-        "4. Meters → Millimeters\n"
-        "5. Back\n"
-        "Press the number respective to the conversion you want: "
-    ))
+    while True:
+        try:
+            conversion = int(input(
+                "1. Meters → Feet\n"
+                "2. Feet → Meters\n"
+                "3. Millimeters → Meters\n"
+                "4. Meters → Millimeters\n"
+                "5. Back\n"
+                "Press the number respective to the conversion you want: "
+            ))
 
-    if conversion == 5:
-        return
+            if not 1 <= conversion <= 5:
+                print("Invalid input")
+                continue
 
-    number = float(input("What is the number do you like to convert? "))
+            if conversion == 5:
+                return
 
-    if conversion == 1:
-        print(f"{meter_to_feet(number)} feet")
-    elif conversion == 2:
-        print(f"{feet_to_meter(number)} meters")
-    elif conversion == 3:
-        print(f"{millimeters_to_meter(number)} meters")
-    elif conversion == 4:
-        print(f"{meters_to_millimeters(number)} millimeters")
+        except ValueError:
+            print("Invalid input")
+
+        else:
+            while True:
+                try:
+                    number = float(input("What is the number do you like to convert? "))
+                except ValueError:
+                    print("Invalid input")
+                else:
+                    if conversion == 1:
+                        print(f"{meter_to_feet(number)} feet")
+                    elif conversion == 2:
+                        print(f"{feet_to_meter(number)} meters")
+                    elif conversion == 3:
+                        print(f"{millimeters_to_meter(number)} meters")
+                    elif conversion == 4:
+                        print(f"{meters_to_millimeters(number)} millimeters")
+                    break

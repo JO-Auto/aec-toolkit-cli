@@ -15,7 +15,7 @@ calculations while reinforcing Python, Git, and software engineering fundamental
 
 ## Planned Features
 
-- [ ] Input Validation
+- [x] Input Validation
 - [ ] Save Projects (JSON)
 - [ ] Calculation History
 
