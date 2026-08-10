@@ -10,7 +10,7 @@ calculations while reinforcing Python, Git, and software engineering fundamental
 - [x] Unit Converter
 - [ ] Pipe Flow / Pipe Sizing Calculator
 - [x] Pipe Slope Calculator
-- [ ] Material Estimator
+- [x] Material Estimator
 - [ ] Water Tank Sizing
 
 ## Planned Features

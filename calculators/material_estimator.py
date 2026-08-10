@@ -1,6 +1,11 @@
-def calculate_slope():
+def calculate_rectangular_volume(length, width, thickness):
+    volume = length * width * thickness
+    return volume
+
+
+def material_estimator():
     print("==============================")
-    print("       Slope Determiner       ")
+    print("      Material Estimator       ")
     print("==============================")
 
     while True:
@@ -11,19 +16,20 @@ def calculate_slope():
                 print("Invalid input")
                 continue
 
+            if choice == 2:
+                return
+
         except ValueError:
             print("Invalid input")
             continue
 
-        if choice == 2:
-            return
-
         while True:
             try:
-                rise = float(input("What is the rise you want to determine the slope? "))
-                run = float(input("And the run? "))
+                length = float(input("What is the length? "))
+                width = float(input("Width? "))
+                thickness = float(input("Thickness? "))
 
-                if rise <= 0 or run <= 0:
+                if length <= 0 or width <= 0 or thickness <= 0:
                     print("Invalid input")
                     continue
 
@@ -31,6 +37,5 @@ def calculate_slope():
                 print("Invalid input")
                 continue
 
-            slope = (rise / run) * 100
-            print(f"{round(slope, 2)} %")
+            print(round(calculate_rectangular_volume(length, width, thickness), 2))
             break

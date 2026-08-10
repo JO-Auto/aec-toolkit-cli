@@ -19,9 +19,9 @@ def meters_to_millimeters(meters):
 
 
 def unit_converter():
-    print("=============================")
-    print("       Unit Converter       ")
-    print("=============================")
+    print("==============================")
+    print("        Unit Converter        ")
+    print("==============================")
 
     while True:
         try:
@@ -43,20 +43,26 @@ def unit_converter():
 
         except ValueError:
             print("Invalid input")
+            continue
 
-        else:
-            while True:
-                try:
-                    number = float(input("What is the number do you like to convert? "))
-                except ValueError:
+        while True:
+            try:
+                number = float(input("What is the number do you like to convert? "))
+
+                if number < 0:
                     print("Invalid input")
-                else:
-                    if conversion == 1:
-                        print(f"{meter_to_feet(number)} feet")
-                    elif conversion == 2:
-                        print(f"{feet_to_meter(number)} meters")
-                    elif conversion == 3:
-                        print(f"{millimeters_to_meter(number)} meters")
-                    elif conversion == 4:
-                        print(f"{meters_to_millimeters(number)} millimeters")
-                    break
+                    continue
+
+            except ValueError:
+                print("Invalid input")
+                continue
+
+            if conversion == 1:
+                print(f"{round(meter_to_feet(number), 2)} feet")
+            elif conversion == 2:
+                print(f"{round(feet_to_meter(number), 2)} meters")
+            elif conversion == 3:
+                print(f"{round(millimeters_to_meter(number), 2)} meters")
+            elif conversion == 4:
+                print(f"{round(meters_to_millimeters(number), 2)} millimeters")
+            break
