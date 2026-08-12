@@ -25,9 +25,9 @@ def material_estimator():
 
         while True:
             try:
-                length = float(input("What is the length? "))
-                width = float(input("Width? "))
-                thickness = float(input("Thickness? "))
+                length = float(input("What is the length (m)? "))
+                width = float(input("Width (m)? "))
+                thickness = float(input("Thickness (m)? "))
 
                 if length <= 0 or width <= 0 or thickness <= 0:
                     print("Invalid input")
@@ -37,5 +37,6 @@ def material_estimator():
                 print("Invalid input")
                 continue
 
-            print(round(calculate_rectangular_volume(length, width, thickness), 2))
+            print(
+                f"Required volume: {round(calculate_rectangular_volume(length, width, thickness), 2)} m³")
             break

@@ -1,5 +1,5 @@
 def calculate_slope(rise, run):
-    slope = (rise / run) * 100
+    slope = ((rise / 1000) / run) * 100
     return slope
 
 
@@ -25,8 +25,8 @@ def pipe_slope():
 
         while True:
             try:
-                rise = float(input("What is the rise you want to determine the slope? "))
-                run = float(input("And the run? "))
+                rise = float(input("What is the rise (mm)? "))
+                run = float(input("What is the run (m)? "))
 
                 if rise <= 0 or run <= 0:
                     print("Invalid input")
