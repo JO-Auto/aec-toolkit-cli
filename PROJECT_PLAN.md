@@ -8,7 +8,7 @@ calculations while reinforcing Python, Git, and software engineering fundamental
 ## Planned Modules
 
 - [x] Unit Converter
-- [ ] Pipe Flow / Pipe Sizing Calculator
+- [x] Pipe Flow / Pipe Sizing Calculator
 - [x] Pipe Slope Calculator
 - [x] Material Estimator
 - [x] Water Tank Sizing

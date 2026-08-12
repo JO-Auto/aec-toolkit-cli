@@ -9,6 +9,13 @@ def calculate_pipe_flow(diameter, velocity):
     return flow_rate, flow_rate_liters
 
 
+def calculate_pipe_diameter(flow_rate, velocity):
+    area = (flow_rate / 1000) / velocity
+    diameter = math.sqrt((area * 4) / math.pi)
+
+    return diameter
+
+
 def pipe_flow():
     print("==================================")
     print("Pipe Flow / Pipe Sizing Calculator")
@@ -47,7 +54,22 @@ def pipe_flow():
                 break
 
         elif choice == 2:
-            print("Pipe Sizing Calculator - Coming Soon")
+            while True:
+                try:
+                    flow_rate = float(input("What is the flow_rate of the water (L/s)?\n"))
+                    velocity = float(input("What is the velocity of the water (m/s)?\n"))
+
+                    if flow_rate <= 0 or velocity <= 0:
+                        print("Invalid input")
+                        continue
+
+                except ValueError:
+                    print("Invalid input")
+                    continue
+
+                print(
+                    f"The required diameter of the pipe is {round(calculate_pipe_diameter(flow_rate, velocity), 2)} m")
+                break
 
         elif choice == 3:
             return
